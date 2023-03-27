@@ -7,6 +7,7 @@ body {
 .container {
   max-width: 300px;
   margin: 230px auto;
+  background-color: white;
   border: rgb(55, 89, 255) solid 2px;
   border-radius: 8px;
   box-shadow: 3px 4px 40px black;
@@ -43,6 +44,22 @@ input {
 img {
   display: none;
 }
+.box {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, rgba(162, 46, 124, 0.3), rgba(142, 14, 175, 0.3));
+}
+
+/* background video */
+video {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
 
 @media (min-width: 768px) {
   img {
@@ -50,7 +67,7 @@ img {
   }
   .container {
     padding: 0;
-    max-width: 575px;
+    min-width: 575px;
     box-shadow: 0 16px 33px black;
   }
   .text h2 {
